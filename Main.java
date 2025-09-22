@@ -23,6 +23,11 @@ public class Main
        y2 = scan.nextInt();
        System.out.println(calcSlope(x1, y1, x2, y2));
        System.out.println(calcSlope(0, 0, 1, 1));
+
+       System.out.println("enter two doubles");
+       double joe = scan.nextDouble();
+       double doe = scan.nextDouble();
+       System.out.println("distance: " + roundedDist(joe, doe));
         
 
     }
@@ -59,9 +64,9 @@ public class Main
     public static int roundedDist(double a, double b)
     {
         // Do problem 3 here; replace code below
-        int distance;
-        distance = ( (int) (math))
-
-        return 0;
+        double distance;
+        distance = Math.abs(b - a);
+        int rounded = (int) (distance + 0.5);
+        return rounded;
     }
 }
